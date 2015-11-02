@@ -1,0 +1,23 @@
+{
+    "twitter": {
+        "api" : {
+            "consumer_key": "xxxxxx",
+            "consumer_secret":"xxxxxx",
+            "oauth_token" : "xxxxxxxx",
+            "oauth_token_secret" : "xxxxxxxx",
+            "user-id" : xxxxxx
+        },
+        "reqParams" : {
+            "q" : "police",
+            "result_type" : "recent",
+            "count" : 100
+        }
+    },
+    "geo" : {
+        "lon" : 2.35382080,
+        "lat" : 48.864714,
+        "radius" :5,
+        "zoom" : 12
+    },
+    "record" : true
+}
