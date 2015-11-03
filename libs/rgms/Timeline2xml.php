@@ -59,7 +59,7 @@ class Converter {
             $elem = $xml -> createElement("geo");
             $geo = isset($tweets[$i]->geo) ? $tweets[$i]->geo : null;  
             
-            if($geo->type == "Point") {
+            if(!is_null($geo) and $geo->type == "Point") {
                 $elemY = $xml -> createElement("y");
                 $elemY -> appendChild($xml -> createTextNode($geo->coordinates[0]));
                 $elemX = $xml -> createElement("x");
